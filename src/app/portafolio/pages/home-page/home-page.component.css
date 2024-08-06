@@ -530,6 +530,7 @@
     .degrees{
         width: 80vw;
         margin-bottom: 20px;
+        height: 12vh;
     }
     .skills{
         margin: 0;

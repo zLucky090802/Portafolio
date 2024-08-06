@@ -146,7 +146,7 @@
 .card {
   display: flex;
   max-width: 450px;
-  max-height: 220px;
+  max-height: 300px;
   width: 450px;
   height: 220px;
   background-color: #393333;
@@ -194,7 +194,7 @@
 @media (max-width:1200px) {
   .card {
     width: 350px;
-    height: 220px;
+    height: 270px;
   }
 
   .cardProyect {
