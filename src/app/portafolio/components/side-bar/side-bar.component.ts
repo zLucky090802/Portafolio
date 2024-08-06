@@ -34,7 +34,10 @@ export class SideBarComponent {
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
+
+    
 }
+
 
 }
 
