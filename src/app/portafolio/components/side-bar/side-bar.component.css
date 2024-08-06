@@ -124,12 +124,14 @@ a {
     }
 
     .navbar {
+        position: fixed;
         display: flex;
         background-color: #393333;
         height: 70px;
         width: 100vw;
         align-items: center;
         justify-content: space-between;
+        z-index: 3;
     }
 
     .navbar a {
