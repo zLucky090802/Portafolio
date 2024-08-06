@@ -203,17 +203,23 @@
     }
 }
 
-.myself{
-    display: flex;
-    
-    margin-bottom: 20px;
-    
-}
+
+
 .about-me{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    align-items: center;
+}
+
+.myself{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me .myself .text{
+    width: 60%;
+    margin-left: 20px;
 }
 
  hr{
@@ -313,6 +319,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    color: white;
 }
 
 
@@ -448,9 +455,31 @@
 }
 /* Ocultar el sidebar cuando el ancho sea menor o igual a 1200px */
 @media (max-width: 1200px) {
+    .about-me .myself .text{
+        margin: 0;
+    }
+    .about-me .myself img{
+        display: none;
+        color: white;
+        
+    }
+    .education{
+        color: white;
+    }
+   
+    .about-me{
+        width: 100%;
+    }
+    .myself{
+        display: flex;
+        width: 80vw;
+    }
+    .myself .text{
+        width: 80vw;
+    }
    
     .contact{
-        width: 100vw;
+        width: 100%;
         margin: 0;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -576,6 +605,13 @@
     }
   
    
+   
+}
+@media (max-width:768px) {
+    
+    .degrees{
+        height: 15vh;
+    }
 }
 
 
