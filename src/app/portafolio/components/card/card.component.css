@@ -1,187 +1,224 @@
-
-
 .cardProyect {
-    position: relative;
-    width: 450px; /* Ajusta el ancho según sea necesario */
-    height: 220px; /* Ajusta la altura según sea necesario */
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cardProyect-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .overlay-content a img{
-    width: 20px;
-    height: 20px;
-    padding-top: 10px;
-
-  }
-  
-  .cardProyect-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
-    transition: opacity 0.3s ease;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Superposición gris con opacidad */
-    color: #fff;
-    opacity: 0;
-    transition: opacity 1s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .overlay-content {
-    padding: 20px;
-  }
-  
-  .cardProyect:hover .overlay {
-    opacity: 1;
-  }
-  
-  .cardProyect:hover .cardProyect-image img {
-    opacity: 0.3; /* Cambia la opacidad de la imagen en hover */
-  }
-.cards-services{
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    justify-content: center;
-    margin-left: 40px;
-}
-.cards-services h3{
-    margin-left: 140px;
+  position: relative;
+  width: 450px;
+  /* Ajusta el ancho según sea necesario */
+  height: 220px;
+  /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cards-services hr{
-    margin-left: 140px;
+
+
+.cardProyect-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    cursor: auto;
-    gap: 40px;
-    margin-bottom: 40px;
-    width: 80vw;
-    justify-content: center;
-    height: 100%;
-   
+
+.overlay-content a img {
+  width: 20px;
+  height: 20px;
+  padding-top: 10px;
+
 }
+
+.cardProyect-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Superposición gris con opacidad */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.overlay-content {
+  padding: 20px;
+}
+
+.cardProyect:hover .overlay {
+  opacity: 1;
+}
+
+.cardProyect:hover .cardProyect-image img {
+  opacity: 0.3;
+  /* Cambia la opacidad de la imagen en hover */
+}
+
+.cards-services {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.cards-services h3 {
+  margin-left: 140px;
+}
+
+.cards-services hr {
+  margin-left: 140px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  cursor: auto;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 80vw;
+  justify-content: center;
+  height: 100%;
+
+}
+
 .card:hover {
   background-color: #00FFFF;
 }
-.card:hover .text p{
- color: #fff;
+
+.card:hover .text p {
+  color: #fff;
 }
 
-.icon{
-    background-color: transparent;
+.icon {
+  background-color: transparent;
 }
 
-.card .icon span{
-    color: #fff;
-    font-size: 50px;
-    background-color: transparent;
-    padding-right: 20px;
-    padding-top: 40px;
-    padding-left: 20px;
+.card .icon span {
+  color: #fff;
+  font-size: 50px;
+  background-color: transparent;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
-.card .text{
-    text-align: left;
+.card .text {
+  text-align: left;
 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-top: 40px;
+}
+
+.card .text p {
+  font-size: 15px;
+  padding-right: 20px;
+  padding-top: 20px;
+  background-color: transparent;
+  color: #CECED0;
+}
+
+.card .text h5 {
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+
+.card {
+  display: flex;
+  max-width: 450px;
+  max-height: 220px;
+  width: 450px;
+  height: 220px;
+  background-color: #393333;
+
+}
+
+.cards-services h3 {
+  font-size: 30px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  color: #fff;
+  font-weight: 300;
+
+}
+
+.cards-services hr {
+  padding-left: 30px;
+}
+
+@media (max-width:768px) {
+  .cardProyect{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    padding-top: 40px;
-}
-.card .text p{
-    font-size: 15px;
-    padding-right: 20px;
-    padding-top: 20px;
-    background-color: transparent;
-    color: #CECED0;
-}
+    height: 350px;
+  }
 
-.card .text h5{
-    font-size: 20px;
-    background-color: transparent;
-    color: #fff;
-    text-transform: capitalize;
-}
-
-
-.card{
+  .mobile{
     display: flex;
-    max-width: 450px;
-    max-height: 220px;
-    width: 450px;
-    height: 220px;
-    background-color: #393333;
-
-}
-
-.cards-services h3{
-    font-size: 30px;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-   
+    flex-direction: column;
+     gap: 5px;
     color: #fff;
-    font-weight: 300;
-    
-}
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
 
-.cards-services hr{
-    padding-left: 30px;
+  .mobile a img{
+    width: 20px;
+    height: 20px;
+  }
+
 }
 
 @media (max-width:1200px) {
-    .card{
-        width: 350px;
-        height: 220px;
-    }
+  .card {
+    width: 350px;
+    height: 220px;
+  }
 
-    .cardProyect{
-      width: 350px;
-    }
+  .cardProyect {
+    width: 350px;
+  }
 
-   .cards-services h3{
+  .cards-services h3 {
     margin-left: 20px;
-   }
+  }
 
-   .cards-services hr{
+  .cards-services hr {
     margin-left: 20px;
-   }
+  }
 
-    .cards-services{
-        display: flex;
-        margin: 0;
-        width:  100vw;
-       justify-content: flex-start;
-        
-    }
-    .cards{
-        width: 100vw;
-        align-items: center;
-    }
+  .cards-services {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    justify-content: flex-start;
+
+  }
+
+  .cards {
+    width: 100vw;
+    align-items: center;
+  }
 }

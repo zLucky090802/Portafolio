@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, input } from '@angular/core';
+import { Component, HostListener, Input, input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -10,7 +10,7 @@ import { Component, Input, input } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   @Input()
   public titleService!: string;
 
@@ -28,5 +28,23 @@ export class CardComponent {
   
   @Input()
   public link!: string;
+
+  isMobile: boolean = false;
+
+  // Listener para detectar cambios en el tamaño de la ventana
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.checkIfMobile();
+  }
+
+  // Verificar al iniciar el componente
+  ngOnInit(): void {
+    this.checkIfMobile();
+  }
+
+  // Función para determinar si la pantalla es de tamaño móvil
+  private checkIfMobile(): void {
+    this.isMobile = window.innerWidth <= 768; // Ajusta el valor según el punto de corte deseado
+  }
 
 }

@@ -9,14 +9,21 @@
 </div>
 
 <div class="cardProyect" *ngIf="proyectCard">
-    <div class="cardProyect-image">
+    <div class="cardProyect-image" >
       <img [src]="img" alt="Project Image">
-      <div class="overlay">
+      <div class="overlay" *ngIf="!isMobile">
         <div class="overlay-content">
           <h3>{{titleService}}</h3>
           <p>{{desc}}</p>
-          <a [href]="[link]" target="_blank"><img src="/github-mark-white.svg" alt=""></a>
+          <a [href]="[link]" target="_blank"><img src="/github-mark-white.webp" alt=""></a>
         </div>
       </div>
+    </div>
+    <div class="mobile" *ngIf="isMobile">
+      <h3>{{titleService}}</h3>
+      <p>{{desc}}</p>
+      <a [href]="[link]" target="_blank">
+        <img src="/github-mark-white.webp" alt="GitHub">
+      </a>
     </div>
   </div>
