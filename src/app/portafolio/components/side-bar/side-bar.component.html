@@ -1,0 +1,75 @@
+<div class="sideBar">
+  <div class="img">
+    <img src="/profilePicture.jpg" alt="profilePicture" />
+  </div>
+  <h5>Daniel Espitia</h5>
+
+  <div class="navmenu">
+    <div class="link" [routerLink]="['/home']" fragment="home2">
+      <span class="material-symbols-outlined">home</span>
+      <a >Home</a>
+    </div>
+    <div class="link" [routerLink]="['/home']" fragment="services">
+      <span class="material-symbols-outlined">design_services</span>
+      <a>Services</a>
+    </div>
+    <div class="link" [routerLink]="['/home']" fragment="projects">
+      <span class="material-symbols-outlined">work</span>
+      <a >Projects</a>
+    </div>
+    <div class="link" [routerLink]="['/home']" fragment="about-me">
+      <span class="material-symbols-outlined">badge</span>
+      <a >About Me</a>
+    </div>
+    <div class="link"[routerLink]="['/home']" fragment="contact">
+      <span class="material-symbols-outlined">call</span>
+      <a >Contact Me</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar for mobile -->
+<div class="navbar">
+  <a href="">Daniel</a>
+  <span class="material-symbols-outlined" (click)="toggleMenu()">menu</span>
+</div>
+
+<!-- Side Menu with overlay -->
+<div class="overlay" *ngIf="isOpen" (click)="closeMenu()"></div>
+<div class="side-menu" *ngIf="isOpen">
+  <span class="close-btn" (click)="closeMenu()">
+    <span class="material-symbols-outlined">
+      arrow_back
+      </span>
+  </span>
+  <div class="container">
+
+    <div class="img">
+      <img src="/profilePicture.jpg" alt="profilePicture" />
+    </div>
+    <h5>Daniel Espitia</h5>
+    <div class="navmenu">
+      <div class="link" routerLink="/Home" fragment="home"  >
+        <span class="material-symbols-outlined" >home</span><a href="">Home</a>
+      </div>
+      <div class="link">
+        <span class="material-symbols-outlined" routerLink="/Home" fragment="services">design_services</span><a href="">Services</a>
+      </div>
+      <div class="link">
+        <span class="material-symbols-outlined" routerLink="/Home" fragment="about-me">badge</span><a href="">About Me</a>
+      </div>
+     
+      <div class="link">
+        <span class="material-symbols-outlined">work</span><a href="">Projects</a>
+      </div>
+      <div class="link">
+        <span class="material-symbols-outlined">call</span><a href="">Contact Me</a>
+      </div>
+    </div>
+  </div>
+  <div class="icons">
+    <a href=""><img src="/github-mark-white.svg" alt=""></a>
+    <a href=""><img src="/In-White-14.png" alt=""></a>
+  </div>
+</div>

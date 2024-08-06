@@ -1,0 +1,589 @@
+*{
+    display: flex;
+    background-color: #403838;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.home .presentation .text .icons a img{
+    width: 10px;
+    height: 10px;
+}
+.icons{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cards-services{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.cards-services h3{
+    margin-left: 140px;
+}
+
+.cards-services hr{
+    margin-left: 140px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    cursor: auto;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 80vw;
+    justify-content: center;
+    height: 100%;
+   
+}
+.card:hover {
+  background-color: #00FFFF;
+}
+.card:hover .text p{
+ color: #fff;
+}
+
+.icon{
+    background-color: transparent;
+}
+
+.card .icon span{
+    color: #fff;
+    font-size: 50px;
+    background-color: transparent;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.card .text{
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding-top: 40px;
+}
+.card .text p{
+    font-size: 15px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: transparent;
+    color: #CECED0;
+}
+
+.card .text h5{
+    font-size: 20px;
+    background-color: transparent;
+}
+
+
+.card{
+    max-width: 450px;
+    max-height: 220px;
+    width: 450px;
+    height: 220px;
+    background-color: #393333;
+
+}
+
+.cards-services h3{
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+   
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+.cards-services hr{
+    padding-left: 30px;
+}
+
+@media (max-width:1200px) {
+    .card{
+        width: 350px;
+        height: 220px;
+    }
+
+   .cards-services h3{
+    margin-left: 20px;
+
+   }
+
+   .cards-services hr{
+    margin-left: 20px;
+   }
+
+    .cards-services{
+        display: flex;
+        margin: 0;
+        width:  100vw;
+       justify-content: flex-start;
+       padding-bottom: 40px;
+       
+        
+    }
+    .cards{
+        width: 100vw;
+        align-items: center;
+    }
+}
+.sideBar{
+    width: 15vw;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #403838;
+    width: 85vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.home .presentation .text{
+    width: 60vw;
+}
+.text{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow-wrap: break-word;
+    
+}
+
+.tex
+.home .presentation .text{
+    margin-right: 40px;
+}
+.presentation{
+    display: flex;
+    
+    
+}
+.text h6{
+    font-size: 1.56rem;
+}
+.text h1{
+    font-size: 4.375rem;
+}
+.text p{
+    font-size: 18px;
+    
+}
+
+ img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    
+    
+}
+@media (max-width:1250px) {
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.myself{
+    display: flex;
+    
+    margin-bottom: 20px;
+    
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+ hr{
+   border: 1px solid #00FFFF;
+   width: 60px;
+}
+
+.titles-skills{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+   
+}
+.home .about-me .myself img{
+    margin-right: 70px;
+}
+
+.degrees{
+    display: flex;
+    flex-direction: column;
+    background-color: #211f1f38;
+    width: 25vw;
+    padding-left: 10px;
+    
+    
+}
+
+.degrees h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #393333;
+}
+.degrees p{
+    color: #CECED0;
+    font-size: 15px;
+    background-color: #393333;
+}
+.skills{
+   margin-left: 40px;
+   display: flex;
+   flex-direction: column;
+}
+.m-1{
+    margin: .25rem;
+}
+
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skills .imgs img{
+    width: 90px;
+    height: 90px;
+    border-style: none;
+     border-radius: 50%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.titles-skills{
+    display: flex;
+    
+}
+.home .about-me .education .titles-skills .skills h3{
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.education .degrees span{
+    background: #00FFFF;
+    color: #fff;
+    font-size: 11px;
+    padding: 1px 8px;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 1px;
+    margin-left: -24px;
+    position: relative;
+    margin-bottom: 9px;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.home .about-me  .myself  .text h3{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+.home .about-me  .education  h3{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #fff;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.home .about-me  .myself .text h6{
+    padding-top: 30px;
+}
+
+.home .about-me .myself img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.desc{
+    margin-top: 20px;
+
+    color: #CFCFD1;
+    font-size: 1.125rem;
+    
+}
+.text button{
+    background: #00FFFF;
+    color: #fff;
+    box-shadow: 4px 4px #fff;
+    padding: 15px;
+    width: 160px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    
+}
+
+.text button:hover{
+    background-color: #fff;
+    box-shadow: 4px 4px #00FFFF;
+    color: #00FFFF;
+    cursor: pointer;
+}
+
+.typing-effect {
+    display: inline; /* Ensure the paragraph is inline so that the caret follows the text closely */
+    position: relative; /* Position relative to allow absolute positioning of the caret */
+    font-family: 'Roboto Condensed'; /* Optional: Monospace font can mimic a typing effect */
+    font-size: 14px; /* Adjust as needed */
+}
+
+/* Caret animation */
+.typing-effect::after {
+    content: ''; /* Empty content for the caret */
+    position: absolute;
+    top: 0; /* Align caret with the top of the text */
+    left: 185px; /* Adjust position to appear right after the text */
+    width: 2px; /* Width of the caret */
+    height: 1em; /* Height of the caret, matches the text height */
+    background-color: #fff; /* Color of the caret */
+    animation: blink 1s step-start infinite; /* Blinking effect */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    color: #CECED0;
+}
+
+.contact h3 {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact hr {
+    border: 1px solid #00FFFF;
+    width: 60px;
+    margin: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px; /* Space between contact details and social icons */
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details a {
+    color: #00FFFF;
+    text-decoration: none;
+    margin-left: 10px; /* Space between icon and text */
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.material-icons {
+    font-size: 20px; /* Size of the Material Icons */
+    color: #00FFFF; /* Color of the icons */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.social-icons a img {
+    width: 20px; /* Size of the social media icons */
+    height: 20px; /* Size of the social media icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Keyframes for blinking caret */
+@keyframes blink {
+    50% {
+        opacity: 0; /* Hide caret halfway through the animation */
+    }
+}
+/* Ocultar el sidebar cuando el ancho sea menor o igual a 1200px */
+@media (max-width: 1200px) {
+   
+    .contact{
+        width: 100vw;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .home {
+        min-width: 100vw; /* Asegura que el div home ocupe todo el ancho del viewport */
+    }
+    .container{
+        display: 
+        flex;
+        align-items: center;
+        height: 80vh;
+    }
+    /* .home .presentation .text{
+        
+    } */
+    .imgs{
+        flex-wrap: wrap;
+    }
+    .presentation{
+        flex-wrap: wrap;
+    }
+   
+    .home .about-me .myself .text{
+        margin-right: 80px;
+    }
+    .education{
+        width: 80vw;
+    }
+    .skills .imgs img {
+        width: 90px; /* Tamaño fijo para las imágenes de habilidades */
+        height: 90px; /* Tamaño fijo para las imágenes de habilidades */
+    }
+    .about-me{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+    }
+    .education{
+        display: flex;
+        
+    }
+    .myself{
+        width: 80vw;
+    }
+    .home{
+        width: 100vw;
+    }
+    .typing-effect::after {
+        left: 185px;
+   }
+
+}
+
+@media (max-width:1000px){
+    .home .about-me .myself {
+        display: flex;
+        flex-direction: column;
+    }
+    .home .about-me .myself .text{
+        width: 60vw;
+    }
+    .home .about-me{
+        display: flex;
+        align-items: center;
+    }
+    .home .about-me .myself img{
+        display: none;
+    }
+    .home .presentation .text .icons a img{
+        display: initial;
+    }
+    .titles-skills{
+        flex-direction: column;
+        width: 60vw;
+    }
+    .degrees{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+    .skills{
+        margin: 0;
+    }
+    .presentation{
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+    }
+    .presentation .text{
+        width: 80vw;
+        padding-right: 20px;
+        padding-left: 20px;
+       
+    }
+    .home{
+        min-height: 100vh;
+       
+    }
+    .home .presentation img{
+        width: 345px;
+        height: 345px;
+        margin-bottom: 40px;
+        display: none;
+    }
+
+    .text h6{
+        font-size: 1.2rem;
+    }
+    .text h1{
+        font-size: 2.8rem;
+    }
+    .text p{
+        font-size: 1rem;
+        
+    }
+    .typing-effect::after {
+         left: 165px;
+    }
+
+    .imgs{
+        width: 80vw;
+    }
+  
+   
+}
+
+
+
+/* Para tamaños más pequeños donde las imágenes grandes deben ser visibles */
+@media (min-width: 1201px) {
+    img {
+        width: 400px;
+        height: 400px;
+    }
+}
+

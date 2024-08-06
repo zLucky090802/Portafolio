@@ -1,0 +1,298 @@
+.sideBar {
+    display: flex;
+    background-color: #403838;
+    width: 15%;
+    /* Ajusta según sea necesario */
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Permite que el pseudo-elemento ::after se posicione correctamente */
+    overflow: hidden;
+    position: fixed;
+}
+
+.sideBar .img {
+    position: relative;
+    /* Necesario para el posicionamiento absoluto del pseudo-elemento ::after */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.sideBar .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* Hace la imagen circular */
+}
+
+/* Pseudo-elemento ::after para el semi-círculo */
+.sideBar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    transform: translateY();
+    width: 250px;
+    /* Ancho del semi-círculo */
+    height: 120px;
+    /* Altura del semi-círculo */
+    background: #00FFFF;
+    /* Color de fondo del semi-círculo */
+    border-radius: 0 0 50% 50%;
+    /* Crea el semi-círculo */
+
+}
+
+h5 {
+    color: white;
+    letter-spacing: 7px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.navmenu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.link {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.link span {
+    color: #fff;
+}
+
+.navmenu .link a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+a {
+    color: white;
+
+    font-weight: 100;
+    text-transform: uppercase;
+
+
+}
+
+.navmenu .link:hover a {
+    color: #00FFFF;
+    font-weight: 600;
+}
+
+.navmenu .link:hover span {
+    color: #00FFFF;
+    font-weight: 600;
+}
+
+.footer {
+    color: #fff;
+}
+
+.navbar {
+    display: none;
+}
+
+
+
+@media (max-width:1200px) {
+    .sideBar {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #393333;
+        height: 70px;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        padding-left: 20px;
+        text-transform: capitalize;
+    }
+
+    .navbar span {
+        color: white;
+        padding-right: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    /* Side Menu */
+    .side-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 30%;
+        /* Same as .sideBar */
+        background-color: #403838;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* Positioned to the left */
+        transition: 0.3s;
+        padding: 20px;
+        color: white;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .icons a img{
+        width: 15px;
+        height: 15px;
+        
+    }
+    
+    .icons{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 50px;
+    }
+
+    .side-menu .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 70px;
+    }
+
+    .side-menu .img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .side-menu h5 {
+        color: white;
+        letter-spacing: 7px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+
+    .side-menu .navmenu {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .side-menu .link {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .side-menu .link span {
+        color: #fff;
+        width: 21px;
+        height: 17px;
+    }
+
+    .side-menu .navmenu .link a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .side-menu .link:hover a {
+        color: #00FFFF;
+        font-weight: 600;
+    }
+
+    .side-menu .link:hover span {
+        color: #00FFFF;
+        font-weight: 600;
+    }
+
+    /* Overlay */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        /* Gris con opacidad */
+        z-index: 1000;
+    }
+
+    .close-btn {
+        font-size: 24px;
+        /* Ajusta el tamaño según tu preferencia */
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        z-index: 1001;
+    }
+
+    .close-btn .material-symbols-outlined {
+        font-size: 24px;
+        /* Ajusta el tamaño según tu preferencia */
+    }
+}
+
+@media (max-width:900px) {
+
+    .side-menu{
+        height: 100%;
+        width: 30%;
+    }
+    
+}
+@media (max-width:768px) {
+    .side-menu{
+        width: 60%;
+    }
+    
+}

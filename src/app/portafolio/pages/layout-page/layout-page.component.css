@@ -1,0 +1,27 @@
+*{
+    display: flex;
+    
+}
+.sideBar{
+    width: 15vw;
+}
+.container{
+    display: flex;
+}
+.home{
+    width: 85vw;
+}
+
+@media (max-width:1200px ){
+    .sideBar{
+        height: 70px;
+        width: 100vw;
+       
+    }
+
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
