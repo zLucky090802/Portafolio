@@ -50,26 +50,25 @@
     </div>
     <h5>Daniel Espitia</h5>
     <div class="navmenu">
-      <div class="link" routerLink="/Home" fragment="home"  >
+      <div class="link" [routerLink]="['/home']" fragment="home2" >
         <span class="material-symbols-outlined" >home</span><a href="">Home</a>
       </div>
-      <div class="link">
-        <span class="material-symbols-outlined" routerLink="/Home" fragment="services">design_services</span><a href="">Services</a>
+      <div class="link" [routerLink]="['/home']" fragment="services">
+        <span class="material-symbols-outlined" >design_services</span><a href="">Services</a>
       </div>
-      <div class="link">
-        <span class="material-symbols-outlined" routerLink="/Home" fragment="about-me">badge</span><a href="">About Me</a>
+
+      <div class="link"[routerLink]="['/home']" fragment="projects">
+        <span class="material-symbols-outlined" >work</span><a href="">Projects</a>
+      </div>
+      <div class="link" [routerLink]="['/home']" fragment="about-me">
+        <span class="material-symbols-outlined" >badge</span><a href="">About Me</a>
       </div>
      
-      <div class="link">
-        <span class="material-symbols-outlined">work</span><a href="">Projects</a>
-      </div>
-      <div class="link">
+     
+      <div class="link" [routerLink]="['/home']" fragment="contact" >
         <span class="material-symbols-outlined">call</span><a href="">Contact Me</a>
       </div>
     </div>
   </div>
-  <div class="icons">
-    <a href=""><img src="/github-mark-white.svg" alt=""></a>
-    <a href=""><img src="/In-White-14.png" alt=""></a>
-  </div>
+  
 </div>

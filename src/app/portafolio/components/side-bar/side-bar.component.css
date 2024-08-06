@@ -187,6 +187,9 @@ a {
         gap: 5px;
         margin-bottom: 50px;
     }
+    .side-menu .navmenu{
+        height: 60vh;
+    }
 
     .side-menu .img {
         width: 100px;
