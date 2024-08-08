@@ -1,14 +1,15 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { SideBarComponent } from '../../components/side-bar/side-bar.component';
 import { CardComponent } from '../../components/card/card.component';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   imports: [
     SideBarComponent,
-    CardComponent
+    CardComponent,
+    RouterLink
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'

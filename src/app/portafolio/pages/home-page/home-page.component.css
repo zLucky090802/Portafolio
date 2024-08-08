@@ -220,6 +220,7 @@
 .about-me .myself .text{
     width: 60%;
     margin-left: 20px;
+    justify-content: center;
 }
 
  hr{
@@ -399,6 +400,9 @@
     width: 60px;
     margin: 10px 0;
 }
+.presentation a{
+    text-decoration: none;
+}
 
 .contact-info {
     display: flex;
@@ -455,8 +459,15 @@
 }
 /* Ocultar el sidebar cuando el ancho sea menor o igual a 1200px */
 @media (max-width: 1200px) {
+    .about-me .myself{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
     .about-me .myself .text{
         margin: 0;
+        width: 80%;
     }
     .about-me .myself img{
         display: none;
@@ -472,10 +483,10 @@
     }
     .myself{
         display: flex;
-        width: 80vw;
+        width: 100vw;
     }
     .myself .text{
-        width: 80vw;
+        width: 100vw;
     }
    
     .contact{
@@ -517,13 +528,14 @@
         display: flex;
         width: 100vw;
         align-items: center;
+        justify-content: center;
     }
     .education{
         display: flex;
         
     }
     .myself{
-        width: 80vw;
+        width: 100vw;
     }
     .home{
         width: 100vw;
